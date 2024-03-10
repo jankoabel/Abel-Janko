@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="My Portfolio website" />
+    <meta name="keywords" content="web design, html, css, js" />
+    <title>Portfolio Website</title>
+  </head>
+  <body class="light-mode">
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd">
+            
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/photo_2024-03-09_14-46-32.jpg" alt="Profile picture" />
+        <h2 class="hero__subtitle">Hi, I am Janko Abel👋</h2>
+        <h1 class="hero__title">
+          FULL-STACK <br />
+          WEB DEVELOPER.
+        </h1>
+        <p class="hero__description">
+       An enthusiastic <strong>Frontend / Fullstack-Jamstack</strong> web developer, I am deeply passionate about crafting exceptional user experiences. With expertise in <strong>UI/UX</strong> design, I specialize in creating visually stunning, pixel-perfect websites and applications that captivate users. My dedication to frontend development extends to the realm of Fullstack-Jamstack development, where I leverage innovative technologies to build seamless and dynamic digital experiences.
+        </p>
+        <a class="hero__btn btn" href="#">Reach out</a>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+    Hello there! I'm Abel Janko, a <strong>Computer Science and Mathematics</strong> student at the Faculty of Electrical Engineering and Informatics based in Bratislava, Slovakia. I wake up in the morning, grab a cup of coffee, open up my laptop, and delve into the world of coding and problem-solving all day, every day.
+</p>
+<p class="about__description">
+    People who know me say I'm obsessed, and that's fair. I am very driven and love learning new things.
+</p>
+<p class="about__description">
+    Currently, I am involved in crafting <strong>commercial and educational websites</strong> with the aim of delivering the very best UI/UX experiences. I strive to express ideas in a deep, attractive, and expressive manner to captivate users' attention effectively.
+</p>
+
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">JavaScript (ES6+)</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">HTML</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">ReactJS</li>
+              <li class="about__list">NextJS</li>
+              <li class="about__list">TailwindCSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+      <img
+            class="about__img lazy loading"
+            src="https://via.placeholder.com/720"
+            data-src="/Abu_man.jpg"
+            alt="Profile picture"
+          />
+        </div>
+      </section>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <div class="featured__wrapper">
+          <h2 class="featured__title">Apple's page project</h2>
+          <a
+            aria-label="link featured projects"
+            class="featured__link"
+            href="#"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="featured__description">
+        
+One of the recent projects is the creation of a dynamic and engaging <strong>Apple's Page</strong>. Through meticulous design and development, the aim was to capture the essence of Apple's brand, delivering a seamless and immersive experience for users. The page showcases Apple's products, services, and ethos in a visually stunning and interactive manner, employing cutting-edge UI/UX principles to ensure an unforgettable journey for visitors.
+</p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech stack</h3>
+            <ul class="featured__tech-stack">
+              <li class="featured__info">TailwindCSS</li>
+              <li class="featured__info">ReactJS</li>
+              <li class="featured__info">React-hook-form</li>
+              <li class="featured__info">NextJS</li>
+              <li class="featured__info">Axios</li>
+              <li class="featured__info">Supabase</li>
+              <li class="featured__info">Stripe</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project type</h3>
+            <p class="featured__info">Fullstack-Jamstack</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">December 2022 - present</p>
+          </div>
+        </div>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+        <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src= "/Project-11.png"
+              alt="Apple's front page"
+            />
+  
+          </div>
+          
+          <div class="featured__img-wrapper">
+             <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src= "/Project_112.png"
+              alt= "Detail"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/Project_113.png"
+              alt="Inside Apple page"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/Project_114.png"
+              alt="Deep Inside Apple's page"
+            />
+            <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+      
+              src="https://via.placeholder.com/1920x968"
+               data-src="/Project-1.png"
+             
+              alt="Puppy's Page"
+            />
+          </div>
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/Project_115.png"
+              alt="Best price Apple products"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/Project_116.png"
+              alt="Apple's project"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/Project13.png"
+              alt="The Best"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+        Here, I'll showcase a few projects I've worked on. They represent my passion for crafting intuitive user experiences and pushing the boundaries of digital innovation.
+        </p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="Apple's Page">Apple's Page</h3>
+          <div class="work__img-wrapper work__image1">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/Project-11.png"
+              alt="Best place"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Apple's Page</h3>
+            <p class="work__project-description1">
+              Experience innovation at its finest with the Apple Commercial Page. Our sleek design and captivating descriptions showcase the best in technology and design. Explore seamlessly, engage effortlessly, and discover the future today. Visit our website now..
+            </p>
+            <p class="work__project-description2">
+              Embark on a journey of technological marvels with the Apple Commercial Page. Immerse yourself in a world of sleek design and captivating descriptions that redefine the standards of innovation. Explore effortlessly and engage deeply to discover the endless possibilities that await. Don't miss out – visit our website now and experience the future of technology with Apple.
+            </p>
+            <a class="btn work__project-btn" href="C:\Users\janko\OneDrive\Desktop\Evangadi\Phase1\Week-4\AppleProject\Project\index.html">Website</a>
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Puppy Lover's Page</h3>
+          <div class="work__img-wrapper work__image2">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/Project13.png"
+              alt="Puppy Lover's Page"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Puppy Lover's Page</h3>
+            <p class="work__project-description1">
+              
+            </p>
+            <p class="work__project-description2">
+            
+Indulge in the heartwarming world of Puppy Lover's Page, where affection and companionship reign supreme. Immerse yourself in a sanctuary of adorable canines and heart-melting moments, meticulously curated to capture the essence of puppy love. With each click, journey through a tapestry of playful antics and unwavering loyalty, celebrating the purest bond between humans and their furry friends.
+            </p>
+            <a class="btn work__project-btn" href="c:\Users\janko\OneDrive\Desktop\Evangadi\Phase1\Week-3\PuppyProject\Project\index.html">Website</a>
+          </div>
+          <!-- Project 3 -->
+          <h3 class="work__project-title">Python Game</h3>
+          <div class="work__img-wrapper work__image3">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/Campus_WorkPython_1.png"
+              alt="Python_Game"
+            />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">FEI STU Campus Project</h3>
+            <p class="work__project-description1">
+              Embark on an exhilarating adventure with our Python Game project, where creativity and excitement converge in the digital realm. Immerse yourself in a captivating world of code and pixels, meticulously crafted to deliver an immersive gaming experience like no other. From thrilling quests to mind-bending puzzles, every aspect of our project is designed to ignite your imagination and challenge your skills.
+           
+            </p>
+            <p class="work__project-description2">
+              Explore the dynamic landscapes of our Python Game project, where each line of code unlocks new possibilities and unravels thrilling narratives. Engage deeply with our interactive features, customize your gameplay experience, and journey through realms brimming with endless surprises and hidden treasures. Join our community of aspiring game developers, share your insights, and embark on a collaborative journey to push the boundaries of gaming innovation. Step into the world of our Python Game project – where every keystroke holds the promise of adventure and discovery.
+      
+            </p>
+            <a class="btn work__project-btn" href="C:\Users\janko\OneDrive\Desktop\Projects\Python_University.py">Website</a>
+          </div>
+          <!-- Project 4 -->
+          <h3 class="work__project-title">Campus Project Block_3</h3>
+          <div class="work__img-wrapper work__image4">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/CampusWork_Block3.png"
+              alt="CampusWork_Block3"
+            />
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">Campus Project Block_3 </h3>
+            <p class="work__project-description1">
+             Step into the dynamic realm of Block3, where C programming expertise meets the ultimate test of ingenuity and resilience. Embark on an electrifying journey through a series of intricately designed challenges, each crafted to push the boundaries of your coding prowess and problem-solving acumen to new heights
+            </p>
+            <p class="work__project-description2">
+             Delve deep into the heart of Block3's challenges, where every line of code is a strategic move in the exhilarating game of programming mastery. Explore diverse scenarios and complex algorithms that will challenge your intellect and inspire creative solutions. Engage with a vibrant community of fellow programmers, exchanging insights, strategies, and camaraderie as you navigate the twists and turns of each challenge.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+          <!-- Project 5 -->
+          <h3 class="work__project-title">Snake_Game</h3>
+          <div class="work__img-wrapper work__image5">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/Snake_OG-logo.jpg"
+              alt="Snake-Gamee"
+            />
+          </div>
+          <div class="work__project work__content5">
+            <h3 class="work__project-subtitle">Snake Game</h3>
+            <p class="work__project-description1">
+              Embark on an exciting adventure with our JavaScript Snake Game, where nostalgia meets cutting-edge web technology for an unforgettable gaming experience. Immerse yourself in the timeless thrill of controlling a serpent through a maze of obstacles and rewards, all with the power of JavaScript at your fingertips.
+              
+            </p>
+            <p class="work__project-description2">
+              Explore the fast-paced action and sleek design of our Snake Game as you navigate through levels filled with challenges and excitement. Engage your reflexes and strategic thinking to outmaneuver the serpent's path and devour your way to victory. With intuitive controls and dynamic gameplay, our JavaScript Snake Game promises endless hours of entertainment and enjoyment for players of all ages.
+             .
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+          <!-- Project 6 -->
+          <h3 class="work__project-title">iphone-Calculator</h3>
+          <div class="work__img-wrapper work__image6">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/iphone_calculator.png"
+              alt="iphone_calculator.png"
+            />
+          </div>
+          <div class="work__project work__content6">
+            <h3 class="work__project-subtitle">iphone-Calculetor</h3>
+            <p class="work__project-description1">
+             Explore the versatility of our iPhone Calculator, where precision and simplicity converge to streamline your calculations. From basic arithmetic to complex equations, our calculator empowers you to crunch numbers with ease and efficiency.
+            </p>
+            <p class="work__project-description2">
+              Step into the realm of digital convenience with our iPhone Calculator in JavaScript, where functionality meets elegance in a seamless user experience. Immerse yourself in the intuitive design and smooth operation of our calculator, meticulously crafted to emulate the sophistication of its real-world counterpart. 
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+          Whether you're initiating a project, have business inquiries, or simply wish to say hello, my inbox is readily accessible. Feel free to reach out, and I'll respond promptly.
+          
+        </p>
+        <a
+          class="contact__btn btn"
+          href="mailto:slayingthedragon.io@gmail.com"
+          target="_blank"
+          >React Out</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Janko Abel ~</h3>
+    </footer>
+  <script type="module" src="./src/main.js"></script>
+    
+    
+  </body>
+</html>
